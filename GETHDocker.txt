@@ -1,0 +1,7 @@
+docker pull ethereum/client-go
+
+
+docker run -it -p 30303:30303 ethereum/client-go
+
+
+docker run -it -p 30303:30303 -v /path/on/host:/root/.ethereum ethereum/client-go
