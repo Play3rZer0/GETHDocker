@@ -1,3 +1,5 @@
+#These are the three commands to run from the Docker CLI to run the Ethereum Go node client
+
 docker pull ethereum/client-go
 
 
