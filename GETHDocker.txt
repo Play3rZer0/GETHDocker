@@ -1,9 +1,17 @@
-#These are the three commands to run from the Docker CLI to run the Ethereum Go node client
+#These are the commands to run from the Docker CLI to run the Ethereum Go node client
+
+#GETTING THE IMAGE
 
 docker pull ethereum/client-go
 
 
+#RUNNING THE NODE
+
 docker run -it -p 30303:30303 ethereum/client-go
 
+docker run -it -p 8545:8545 -p 30303:30303 ethereum/client-go --rpc --rpcaddr "0.0.0.0"
+
+
+#PERSISTENT DATA
 
 docker run -it -p 30303:30303 -v /path/on/host:/root/.ethereum ethereum/client-go
