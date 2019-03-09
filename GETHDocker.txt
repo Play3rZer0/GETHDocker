@@ -9,6 +9,8 @@ docker pull ethereum/client-go
 
 docker run -it -p 30303:30303 ethereum/client-go
 
+#RUNNING NODE USING API
+
 docker run -it -p 8545:8545 -p 30303:30303 ethereum/client-go --rpc --rpcaddr "0.0.0.0"
 
 
