@@ -1,5 +1,5 @@
 # GETHDocker
-Running GETH from a Docker Container.
+Running GETH (Ethereum Go) node from a Docker Container.
 
 The GoEthereum website lists the following available images with descriptions.
 ethereum/client-go:latest is the latest develop version of Geth
