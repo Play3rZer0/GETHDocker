@@ -16,3 +16,5 @@ The following ports are opened by default when running from the container.
 For more details, read the article at this link at FreeCodeCamp.org:
 
 https://medium.freecodecamp.org/how-to-run-geth-from-a-docker-container-b6d30620ca74
+
+NOTE: Take note that running the option rpcaddr “0.0.0.0” is not secure, since you are opening up your node to all traffic. If your ETH wallet were unlocked, a hacker can get to your node in this way and take your coins. I don’t cover security in this article, but you can read more about that here -> https://medium.com/coinmonks/securing-your-ethereum-nodes-from-hackers-8b7d5bac8986 (securing your GETH node’s RPC ports). Always abide by safe and best practices.
